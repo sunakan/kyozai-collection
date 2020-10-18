@@ -13,3 +13,8 @@ gihyo: gihyo.json
 tatsu-zine: tatsu-zine.json
 	@echo 'Title,Authors' > tatsu-zine.csv
 	@cat tatsu-zine.json | jq -r '.[]' >> tatsu-zine.csv
+
+.PHONY: booth
+booth: booth.json
+	@echo 'Title' > booth.csv
+	@cat booth.json | jq -r '.[]' >> booth.csv

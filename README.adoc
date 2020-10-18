@@ -42,6 +42,21 @@ $ JSON.stringify([...document.querySelectorAll("table.cart > tbody tr")].map(n =
 
 == Booth
 
+ログインして、右上のアカウントアイコンから購入した商品に飛んで、デベロッパツール
+
+----
+$ JSON.stringify([...document.querySelectorAll("div.u-tpg-caption1.u-text-gray-500")].map(n => n.innerText))
+----
+
+して
+
+----
+["ABC","DEF","GHI"]
+----
+
+(両端のダブルクォーテーションを除いた文字列)をコピーしてjsonファイルに張り付けしてjqでごにょる
+
+
 == 技術書典
 
 == Udemy
