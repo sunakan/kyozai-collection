@@ -3,3 +3,8 @@ EXCLUDE_KINDLE := \(電撃文庫\|あすか\|コミックス\|クール教信者
 .PHONY: kindle
 kindle: raw-kindle.csv
 	cat raw-kindle.csv | grep -v -E $(EXCLUDE_KINDLE) > kindle.csv
+
+.PHONY: gihyo
+gihyo: gihyo.json
+	@echo 'Title' > gihyo.csv
+	@cat gihyo.json | jq -r '.[]' >> gihyo.csv

@@ -6,6 +6,20 @@ link:https://qiita.com/taka_hira/items/8a9181c0733de2c9f8ee[Kindle蔵書一覧�
 
 == Gihyo
 
+ログインして、マイページして、デベロッパーコンソール
+
+----
+$ JSON.stringify([...document.querySelectorAll('#listMyBook#listMyBook > li p.title')].map (n => n.innerText).map(txt => txt.replace(/\r?\n/g,"")))
+----
+
+して
+
+----
+["ABC","DEF","GHI"]
+----
+
+(両端のダブルクォーテーションを除いた文字列)をコピーしてjsonファイルに張り付けしてjqでごにょる
+
 == ラムダノート
 
 == 達人出版
@@ -18,5 +32,6 @@ link:https://qiita.com/taka_hira/items/8a9181c0733de2c9f8ee[Kindle蔵書一覧�
 
 == TechPit
 
-== 紙の本
+== オライリー
 
+== 紙の本
