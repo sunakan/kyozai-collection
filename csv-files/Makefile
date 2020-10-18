@@ -1,0 +1,5 @@
+EXCLUDE_KINDLE := \(電撃文庫\|あすか\|コミックス\|クール教信者\|ファンタジア文庫\|講談社文庫\|MF文庫J\|ファミ通文庫\|限定\|英文法\|プリズナー\|召喚獣\|くがね\|ダンジョン\|FACTFULNESS\|「良い質問」をする技術\|Illustrator\)
+
+.PHONY: kindle
+kindle: raw-kindle.csv
+	cat raw-kindle.csv | grep -v -E $(EXCLUDE_KINDLE) > kindle.csv
