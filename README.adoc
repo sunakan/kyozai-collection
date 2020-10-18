@@ -22,7 +22,23 @@ $ JSON.stringify([...document.querySelectorAll('#listMyBook#listMyBook > li p.ti
 
 == ラムダノート
 
+手動
+
 == 達人出版
+
+ログインして、マイページして、デベロッパコンソール
+
+----
+$ JSON.stringify([...document.querySelectorAll("table.cart > tbody tr")].map(n => [n.querySelector("td.title"), n.querySelector("td.author")]).filter(nodes => nodes[0]!=null).map(nodes => nodes.map(n => n.innerText)).map(nodes => nodes.join(",")))
+----
+
+して
+
+----
+["ABC","DEF","GHI"]
+----
+
+(両端のダブルクォーテーションを除いた文字列)をコピーしてjsonファイルに張り付けしてjqでごにょる
 
 == Booth
 

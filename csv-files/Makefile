@@ -8,3 +8,8 @@ kindle: raw-kindle.csv
 gihyo: gihyo.json
 	@echo 'Title' > gihyo.csv
 	@cat gihyo.json | jq -r '.[]' >> gihyo.csv
+
+.PHONY: tatsu-zine
+tatsu-zine: tatsu-zine.json
+	@echo 'Title,Authors' > tatsu-zine.csv
+	@cat tatsu-zine.json | jq -r '.[]' >> tatsu-zine.csv
