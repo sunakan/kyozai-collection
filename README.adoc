@@ -59,6 +59,22 @@ $ JSON.stringify([...document.querySelectorAll("div.u-tpg-caption1.u-text-gray-5
 
 == 技術書典
 
+ログインして、自分の本棚、デベロッパツール
+
+----
+$ [...document.querySelectorAll("div.css-18t94o4.css-1dbjc4n.r-1mlwlqe.r-kccct8.r-1udh08x.r-1x93onp.r-417010")].forEach(n => n.click())
+で本のモーダルを全部出す（重ねて出る）
+$ JSON.stringify([...document.querySelectorAll("div.MuiDialog-root div.css-1dbjc4n.r-13awgt0.r-eqz5dr.r-1777fci.r-zg41ew")].map(n => [n.querySelector("span").innerText, n.querySelector(".css-901oao.r-1enofrn.r-1byouvs.r-rjixqe.r-r0h9e2.r-bt1l66").innerText].join(",")))
+----
+
+して
+
+----
+["ABC","DEF","GHI"]
+----
+
+(両端のダブルクォーテーションを除いた文字列)をコピーしてjsonファイルに張り付けしてjqでごにょる
+
 == Udemy
 
 == TechPit

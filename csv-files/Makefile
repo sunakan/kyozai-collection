@@ -18,3 +18,8 @@ tatsu-zine: tatsu-zine.json
 booth: booth.json
 	@echo 'Title' > booth.csv
 	@cat booth.json | jq -r '.[]' >> booth.csv
+
+.PHONY: techbookfest
+techbookfest: techbookfest.json
+	@echo 'Title,Authors' > techbookfest.csv
+	@cat techbookfest.json | jq -r '.[]' >> techbookfest.csv
