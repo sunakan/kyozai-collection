@@ -59,7 +59,7 @@ $ JSON.stringify([...document.querySelectorAll("div.u-tpg-caption1.u-text-gray-5
 
 == 技術書典
 
-ログインして、自分の本棚、デベロッパツール
+ログインして、自分の本棚、下までスクロール、デベロッパツール
 
 ----
 $ [...document.querySelectorAll("div.css-18t94o4.css-1dbjc4n.r-1mlwlqe.r-kccct8.r-1udh08x.r-1x93onp.r-417010")].forEach(n => n.click())
@@ -82,3 +82,5 @@ $ JSON.stringify([...document.querySelectorAll("div.MuiDialog-root div.css-1dbjc
 == オライリー
 
 == 紙の本
+
+手動
